@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>A.T.A.S - L.A.S.U</title>
+
+    <!-- styling-link -->
+    <link rel="stylesheet" href="./src/output.css">
+
+    <!-- boxicon-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- favicon-link -->
+    <link rel="shortcut icon" href="./IMG/LASU-LOGO.png" type="image/x-icon">
+
+</head>
+
+<body class="flex flex-col gap-5 md:gap-20">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 bg-white flex items-center justify-center">
+        <div class="flex flex-col items-center gap-3">
+            <img src="./IMG/ATAS-LOGO-one.png" alt="Loading Logo" class="w-20 h-20 animate-bounce">
+            <p class="text-blue-800 font-semibold text-lg animate-pulse">Loading ATAS world...</p>
+        </div>
+    </div>
+  
+    <nav class="fixed">
+        <div class="nav-content">
+            <div class="flex items-center gap-3">
+                <img src="./IMG/ATAS-LOGO-one.png" alt="" width="70px" height="50px">
+                <h1><a href="#">A.T.A.S</a></h1>
+            </div>
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li><a href="./public/about.html">About Us</a></li>
+                <li><a href="./public/resources.html">Resources</a></li>
+                <li><a href="./public/membership.html">Join Us</a></li>
+                <li><a href="./public/blog.html">Blog</a></li>
+            </ul>
+            <a href="#navSidebar" class="nav-menu-icon">&#9776;</a>
+        </div>
+
+        <div class="nav-sidebar" id="navSidebar">
+            <a href="#" class="close-btn">&times;</a>
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li><a href="./public/about.html">About Us</a></li>
+                <li><a href="./public/resources.html">Resources</a></li>
+                <li><a href="./public/membership.html">Join Us</a></li>
+                <li><a href="./public/blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex flex-col gap-20 bg-gray-100">
+        <section
+            class="w-full bg-blue-800 flex flex-col-reverse md:flex-row-reverse justify-between items-center gap-10 px-6 md:px-20 pb-10 pt-30">
+
+            <div class="w-full md:w-1/2 h-96 md:h-[30rem] rounded-2xl overflow-hidden shadow-lg">
+                <img src="./IMG/pic-one.jpeg" loading="lazy" alt="Hero Image" class="w-full h-full object-cover rounded-2xl">
+            </div>
+
+            <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+                <h1 class="text-4xl md:text-5xl text-white font-bold leading-tight">
+                    <p>Welcome to the Lagos State University</p>
+                    <p class="text-blue-200">Association of Theatre Art Students</p>
+                </h1>
+
+                <p class="text-white text-lg md:text-xl">
+                    A <em class="font-bold">COMMUNITY</em> for theatre art students here in
+                    <em class="font-bold">L.A.S.U</em> to engage, relate, and grow together.
+                    Your journey into the world of theatre <em>starts here.</em>
+                </p>
+
+                <a href="#"
+                    class="w-full sm:w-auto px-6 py-3 bg-amber-500 text-white font-bold text-xl rounded-full hover:shadow-lg transition-all hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+
+        </section>
+
+        <section class="w-full px-6 md:px-20 py-16 flex flex-col md:flex-row gap-10 bg-gray-100" data-aos="fade-up" data-aos-duration="900">
+
+
+            <div class="w-full md:w-1/2 flex flex-col gap-5 justify-center" data-aos="fade-up" data-aos-duration="900">
+                <p class="px-5 py-2 bg-white w-fit rounded text-sm">FEATURES</p>
+                <h2 class="text-3xl md:text-4xl font-bold leading-snug">Empowering Future Theatre Artists Together</h2>
+                <p class="text-gray-700 text-base md:text-lg">
+                    Nurturing creativity and passion by equipping the next generation of theatre artists with the
+                    skills,
+                    confidence, and inspiration to shine on stage and beyond.
+                </p>
+                <a href="./public/about.html"
+                    class="w-36 h-10 bg-blue-600 text-white text-center content-center rounded font-semibold hover:shadow-md hover:scale-105 transition-all">
+                    Learn more →
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/2 flex flex-col gap-6">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all duration-300" data-aos="fade-up" data-aos-duration="900">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700"><i class="fa-solid fa-palette"></i> Creative
+                        Workshops</h3>
+                    <p class="text-gray-600">Hands-on sessions to sharpen your acting, directing, and stagecraft skills.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all duration-300" data-aos="fade-up" data-aos-duration="900">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700"><i class="fa-solid fa-handshake-simple"></i>
+                        Networking Events</h3>
+                    <p class="text-gray-600">Connect with theatre professionals, alumni, and students through meetups.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all duration-300" data-aos="fade-up" data-aos-duration="900">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700"><i class="fa-solid fa-book"></i> Access to
+                        Resources</h3>
+                    <p class="text-gray-600">Download past questions, scripts, and more to support your artistic
+                        journey.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="w-full relative overflow-hidden" id="carouselWrapper" data-aos="fade-up" data-aos-duration="900">
+            <div class="relative w-full h-[18rem] sm:h-[22rem] md:h-[26rem] lg:h-[30rem]">
+                <!-- Dot Indicators -->
+                <div id="carouselDots"
+                    class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+                    <!-- JS will populate dots here -->
+                </div>
+
+
+                <!-- Slides Container -->
+                <div id="carouselSlides" class="w-full h-full relative transition-all duration-700 ease-in-out">
+                    <!-- Slide 1 -->
+                    <div
+                        class="carousel-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-700 ease-in-out">
+                        <img src="./IMG/pic-two.jpg" loading="lazy" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/50 text-white px-4 text-center">
+                            <div class="space-y-2">
+                                <h2 class="text-xl sm:text-2xl md:text-4xl text-red-400 font-bold">Register today to be
+                                </h2>
+                                <p class="text-md sm:text-lg md:text-2xl">Part of the COMMUNITY</p>
+                                <div class="text-3xl mt-2">
+                                    <i class="fa-solid fa-masks-theater"></i>
+                                    <i class="fa-solid fa-photo-film"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div
+                        class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-700 ease-in-out">
+                        <img src="./IMG/pic-three.jpg" loading="lazy" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/50 text-white px-4 text-center">
+                            <div class="space-y-2">
+                                <h2 class="text-xl sm:text-2xl md:text-4xl text-yellow-400 font-bold">Engage in exciting
+                                </h2>
+                                <p class="text-md sm:text-lg md:text-2xl">Theatre Activities</p>
+                                <div class="text-3xl mt-2">
+                                    <i class="fa-solid fa-masks-theater text-yellow-400"></i>
+                                    <i class="fa-solid fa-photo-film"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div
+                        class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-700 ease-in-out">
+                        <img src="./IMG/pic-four.jpg" loading="lazy" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/50 text-white px-4 text-center">
+                            <div class="space-y-2">
+                                <h2 class="text-xl sm:text-2xl md:text-4xl text-blue-400 font-bold">Get free access</h2>
+                                <p class="text-md sm:text-lg md:text-2xl">to Resources</p>
+                                <div class="text-3xl mt-2">
+                                    <i class="fa-solid fa-masks-theater"></i>
+                                    <i class="fa-solid fa-photo-film text-blue-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button id="prevSlide" class="arrow-btn left-2">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button id="nextSlide" class="arrow-btn right-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+        </section>
+
+
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            class="fixed bottom-6 right-6 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 z-20">
+            ↑
+        </button>
+
+    </main>
+    <footer class="bg-blue-800 text-white pt-10 pb-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <div class="flex flex-col gap-3">
+                <img src="./IMG/ATAS-LOGO-one.png" alt="ATAS Logo" class="w-16">
+                <h2 class="text-xl md:text-2xl font-bold">A.T.A.S - L.A.S.U</h2>
+                <p class="text-sm md:text-base text-gray-300">
+                    Association of Theatre Art Students, LASU — Building dreams on stage, in class, and beyond.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Quick Links</h3>
+                <ul class="flex flex-col gap-2 text-sm md:text-base text-gray-200">
+                    <li><a href="#" class="hover:text-white">Home</a></li>
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Resources</a></li>
+                    <li><a href="#" class="hover:text-white">Join Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Contact Us</h3>
+                <ul class="text-sm md:text-base text-gray-200 space-y-2">
+                    <li>Email: atas@lasu.edu.ng</li>
+                    <li>Phone: +234 704 235 7125</li>
+                    <li>Location: LASU, Ojo Campus</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-300 mt-10 pt-5 text-center text-gray-300 text-sm px-4 sm:px-6">
+            © <span id="year"></span> A.T.A.S - LASU. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in ms
+            offset: 120, // How far before trigger point
+            once: true // Animate only once
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
