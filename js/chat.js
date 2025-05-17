@@ -115,7 +115,7 @@ window.addEventListener("DOMContentLoaded", () => {
       } else if (/hello|hi|hey/i.test(userMessage)) {
         response = `🎭 ATAS Bot: Hey there, ${userName}! Welcome to the chat!`;
       }
-
+      
       const msg = {
         id: Date.now() + 1,
         name: "🎭 ATAS Bot",
