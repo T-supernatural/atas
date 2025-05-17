@@ -135,13 +135,6 @@ window.addEventListener("DOMContentLoaded", () => {
   // Initial render
   renderMessages();
 });
-// Check login on page load
-window.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("isLoggedIn") !== "true") {
-      alert("You must login first!");
-      window.location.href = "membership.html";
-    }
-  });
   
   // Logout button handler
   const logoutBtn = document.getElementById("logout-btn");
