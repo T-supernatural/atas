@@ -48,7 +48,7 @@ function renderUserContent() {
                 }
                 ${
                   item.tags
-                    ? `<p class="mt-1 text-sm text-blue-500"><strong>Tags:</strong> ${item.tags}</p>`
+                    ? `<p class="mt-1 text-sm text-amber-600"><strong>Tags:</strong> ${item.tags}</p>`
                     : ""
                 }
                 ${
@@ -73,7 +73,7 @@ function renderSidebar(items) {
       const li = document.createElement("li");
       li.innerHTML = `
                 <div>
-                    <h4 class="font-semibold text-blue-800">${post.title}</h4>
+                    <h4 class="font-semibold text-amber-600">${post.title}</h4>
                     ${
                       post.image
                         ? `<img src="${post.image}" class="w-full h-20 object-cover rounded mt-2" />`
@@ -127,12 +127,12 @@ function toggleUserTabs() {
   document
     .querySelectorAll(".tab")
     .forEach((tab) =>
-      tab.classList.remove("active", "border-b-4", "text-blue-700")
+      tab.classList.remove("active", "border-b-4", "text-amber-600")
     );
   const activeBtn = currentTab === "blogs" ? "tab-blogs" : "tab-events";
   document
     .getElementById(activeBtn)
-    .classList.add("active", "border-b-4", "text-blue-700");
+    .classList.add("active", "border-b-4", "text-amber-600");
 }
 
 // ADMIN TABS

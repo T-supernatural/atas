@@ -28,7 +28,7 @@
     <div id="preloader" class="fixed inset-0 z-50 bg-white flex items-center justify-center">
         <div class="flex flex-col items-center gap-3">
             <img src="../IMG/ATAS-LOGO-one.png" alt="Loading Logo" class="w-20 h-20 animate-bounce">
-            <p class="text-blue-800 font-semibold text-lg animate-pulse">Loading ATAS world...</p>
+            <p class="text-amber-600 font-semibold text-lg animate-pulse">Loading ATAS world...</p>
         </div>
     </div>
 
@@ -62,12 +62,12 @@
 
     <main class="bg-gray-100 pt-32 pb-24">
         <section class="max-w-5xl mx-auto p-6">
-            <h1 class="text-3xl font-bold mb-8 text-blue-800">Resources & Downloads</h1>
+            <h1 class="text-3xl font-bold mb-8 text-black hover:text-amber-600">Resources & Downloads</h1>
         
             <!-- Search/filter input (optional) -->
             <div class="mb-6" data-aos="fade-up" data-aos-duration="900">
                 <input type="search" id="resource-search" placeholder="Search resources..."
-                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600" />
             </div>
         
             <!-- Resources list -->
@@ -78,45 +78,43 @@
           
 
         <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-            class="fixed bottom-6 right-6 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 z-20">
+            class="fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg  z-20">
             ↑
         </button>
-    </main>
-    <footer class="bg-blue-800 text-white pt-10 pb-5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-    
-            <div class="flex flex-col gap-3">
-                <img src="../IMG/ATAS-LOGO-one.png" alt="ATAS Logo" class="w-16">
-                <h2 class="text-xl md:text-2xl font-bold">A.T.A.S - L.A.S.U</h2>
-                <p class="text-sm md:text-base text-gray-300">
-                    Association of Theatre Art Students, LASU — Building dreams on stage, in class, and beyond.
-                </p>
+        </main>
+        
+        <footer class="bg-black text-white pt-10 pb-5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="flex flex-col gap-3">
+                    <img src="../IMG/ATAS-LOGO-one.png" alt="ATAS Logo" class="w-16">
+                    <h2 class="text-xl md:text-2xl font-bold text-amber-600">A.T.A.S - L.A.S.U</h2>
+                    <p class="text-sm md:text-base text-gray-300">
+                        Association of Theatre Art Students, LASU — Building dreams on stage, in class, and beyond.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-3 text-teal">Quick Links</h3>
+                    <ul class="flex flex-col gap-2 text-sm md:text-base text-gray-200">
+                        <li><a href="../index.html" class="hover:text-amber-600">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-amber-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-amber-600">Resources</a></li>
+                        <li><a href="./membership.html" class="hover:text-amber-600">Join Us</a></li>
+                        <li><a href="./blog.html" class="hover:text-amber-600">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-3 text-teal">Contact Us</h3>
+                    <ul class="text-sm md:text-base text-gray-200 space-y-2">
+                        <li>Email: atas@lasu.edu.ng</li>
+                        <li>Phone: +234 704 235 7125</li>
+                        <li>Location: LASU, Ojo Campus</li>
+                    </ul>
+                </div>
             </div>
-    
-            <div>
-                <h3 class="text-lg md:text-xl font-semibold mb-3">Quick Links</h3>
-                <ul class="flex flex-col gap-2 text-sm md:text-base text-gray-200">
-                    <li><a href="#" class="hover:text-white">Home</a></li>
-                    <li><a href="#" class="hover:text-white">About Us</a></li>
-                    <li><a href="#" class="hover:text-white">Resources</a></li>
-                    <li><a href="#" class="hover:text-white">Join Us</a></li>
-                </ul>
+            <div class="border-t border-gray-700 mt-10 pt-5 text-center text-gray-300 text-sm px-4 sm:px-6">
+                © <span id="year"></span> A.T.A.S - LASU. All Rights Reserved.
             </div>
-    
-            <div>
-                <h3 class="text-lg md:text-xl font-semibold mb-3">Contact Us</h3>
-                <ul class="text-sm md:text-base text-gray-200 space-y-2">
-                    <li>Email: atas@lasu.edu.ng</li>
-                    <li>Phone: +234 704 235 7125</li>
-                    <li>Location: LASU, Ojo Campus</li>
-                </ul>
-            </div>
-        </div>
-    
-        <div class="border-t border-gray-300 mt-10 pt-5 text-center text-gray-300 text-sm px-4 sm:px-6">
-            © <span id="year"></span> A.T.A.S - LASU. All Rights Reserved.
-        </div>
-    </footer>
+        </footer>
 
 
     <script src="../js/resources.js"></script>

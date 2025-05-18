@@ -20,7 +20,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const hue = hash % 360;
     return `hsl(${hue}, 70%, 80%)`;
   }
-  
 
   function renderMessages() {
     chatBox.innerHTML = "";
@@ -65,7 +64,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (!text) {
       console.log("Empty message, ignoring");
       return;
-    }  
+    }
 
     const msg = {
       id: Date.now(),
@@ -136,18 +135,17 @@ window.addEventListener("DOMContentLoaded", () => {
   renderMessages();
 });
 // Check login on page load
-window.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("isLoggedIn") !== "true") {
-      alert("You must login first!");
-      window.location.href = "membership.html";
-    }
-  });
-  
-  // Logout button handler
-  const logoutBtn = document.getElementById("logout-btn");
-  logoutBtn.addEventListener("click", () => {
-    localStorage.removeItem("isLoggedIn");
-    localStorage.removeItem("atasMemberName");
-    window.location.href = "membership.html";
-  });
-  
+// window.addEventListener("DOMContentLoaded", () => {
+//   if (localStorage.getItem("isLoggedIn") !== "true") {
+//     alert("You must login first!");
+//     window.location.href = "membership.html";
+//   }
+// });
+
+// Logout button handler
+const logoutBtn = document.getElementById("logout-btn");
+logoutBtn.addEventListener("click", () => {
+  localStorage.removeItem("isLoggedIn");
+  localStorage.removeItem("atasMemberName");
+  window.location.href = "membership.html";
+});

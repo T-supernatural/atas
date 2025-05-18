@@ -103,3 +103,26 @@ window.addEventListener("load", () => {
     preloader.style.display = "none";
   }, 500);
 });
+
+const heroImages = [
+  "./IMG/home-one.jpg",
+  "./IMG/home-two.jpg",
+  "./IMG/home-three.jpg",
+];
+
+const heroImageElement = document.getElementById("hero-carousel-img");
+let heroCurrentIndex = 0;
+
+setInterval(() => {
+  // Fade out
+  heroImageElement.classList.add("opacity-0");
+
+  setTimeout(() => {
+    // Change image
+    heroCurrentIndex = (heroCurrentIndex + 1) % heroImages.length;
+    heroImageElement.src = heroImages[heroCurrentIndex];
+
+    // Fade in
+    heroImageElement.classList.remove("opacity-0");
+  }, 400); // timing matches fade duration
+}, 3500); // 3.5 seconds interval

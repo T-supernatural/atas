@@ -34,12 +34,12 @@ function renderResources(list) {
       "border rounded-lg p-4 shadow hover:shadow-lg transition";
 
     resourceCard.innerHTML = `
-        <h3 class="font-semibold text-lg mb-2 text-blue-700">${res.title}</h3>
+        <h3 class="font-semibold text-lg mb-2 text-black">${res.title}</h3>
         <p class="text-gray-600 mb-4">${res.description}</p>
         <a
           href="${res.fileUrl}"
           download
-          class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition"
+          class="inline-block bg-black hover:bg-amber-600 text-white px-4 py-2 rounded transition"
         >
           Download
         </a>

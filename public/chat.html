@@ -28,7 +28,7 @@
     <div id="preloader" class="fixed inset-0 z-50 bg-white flex items-center justify-center">
         <div class="flex flex-col items-center gap-3">
             <img src="../IMG/ATAS-LOGO-one.png" alt="Loading Logo" class="w-20 h-20 animate-bounce">
-            <p class="text-blue-800 font-semibold text-lg animate-pulse">Loading ATAS world...</p>
+            <p class="text-amber-600 font-semibold text-lg animate-pulse">Loading ATAS world...</p>
         </div>
     </div>
 
@@ -42,7 +42,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
                 <li><a href="./resources.html">Resources</a></li>
-                <li class="home"><a href="#">Chat</a></li>
+                <li><a href="./membership.html">Join Us</a></li>
                 <li><a href="./blog.html">Blog</a></li>
             </ul>
             <a href="#navSidebar" class="nav-menu-icon">&#9776;</a>
@@ -60,11 +60,11 @@
         </div>
     </nav>
 
-    <main class="bg-gray-100 pt-12">
+    <main class="bg-gray-100">
         <section
-            class="h-[90vh] max-w-4xl mx-auto my-10 flex flex-col border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+            class="h-[100vh] max-w-4xl mx-auto my-10 flex flex-col border border-gray-300 rounded-lg shadow-lg overflow-hidden">
             <!-- Chat Header -->
-            <div class="bg-blue-800 text-white px-6 py-4 flex items-center justify-between">
+            <div class="bg-black text-white px-6 py-4 flex items-center justify-between">
                 <h2 id="chat-header" class="text-xl font-bold"></h2>
                 <span class="text-sm text-blue-200">Online: 12</span>
             </div>
@@ -82,40 +82,38 @@
                 <input id="chat-input" type="text" placeholder="Type your message..."
                     class="flex-1 px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600"
                     required>
-                <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded-full">
+                <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-full">
                     Send
                 </button>
             </form>
         </section>
 
-        <button id="logout-btn" class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 absolute top-4 right-4">
+        <!-- <button id="logout-btn" class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 absolute top-4 right-4">
             Logout
-        </button>
+        </button> -->
           
     </main>
-    <footer class="bg-blue-800 text-white pt-10 pb-5">
+    <footer class="bg-black text-white pt-10 pb-5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-
             <div class="flex flex-col gap-3">
                 <img src="../IMG/ATAS-LOGO-one.png" alt="ATAS Logo" class="w-16">
-                <h2 class="text-xl md:text-2xl font-bold">A.T.A.S - L.A.S.U</h2>
+                <h2 class="text-xl md:text-2xl font-bold text-amber-600">A.T.A.S - L.A.S.U</h2>
                 <p class="text-sm md:text-base text-gray-300">
                     Association of Theatre Art Students, LASU — Building dreams on stage, in class, and beyond.
                 </p>
             </div>
-
             <div>
-                <h3 class="text-lg md:text-xl font-semibold mb-3">Quick Links</h3>
+                <h3 class="text-lg md:text-xl font-semibold mb-3 text-teal">Quick Links</h3>
                 <ul class="flex flex-col gap-2 text-sm md:text-base text-gray-200">
-                    <li><a href="#" class="hover:text-white">Home</a></li>
-                    <li><a href="#" class="hover:text-white">About Us</a></li>
-                    <li><a href="#" class="hover:text-white">Resources</a></li>
-                    <li><a href="#" class="hover:text-white">Join Us</a></li>
+                    <li><a href="../index.html" class="hover:text-amber-600">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-amber-600">About Us</a></li>
+                    <li><a href="./resources.html" class="hover:text-amber-600">Resources</a></li>
+                    <li><a href="./membership.html" class="hover:text-amber-600">Join Us</a></li>
+                    <li><a href="./blog.html" class="hover:text-amber-600">Blog</a></li>
                 </ul>
             </div>
-
             <div>
-                <h3 class="text-lg md:text-xl font-semibold mb-3">Contact Us</h3>
+                <h3 class="text-lg md:text-xl font-semibold mb-3 text-teal">Contact Us</h3>
                 <ul class="text-sm md:text-base text-gray-200 space-y-2">
                     <li>Email: atas@lasu.edu.ng</li>
                     <li>Phone: +234 704 235 7125</li>
@@ -123,11 +121,11 @@
                 </ul>
             </div>
         </div>
-
-        <div class="border-t border-gray-300 mt-10 pt-5 text-center text-gray-300 text-sm px-4 sm:px-6">
+        <div class="border-t border-gray-700 mt-10 pt-5 text-center text-gray-300 text-sm px-4 sm:px-6">
             © <span id="year"></span> A.T.A.S - LASU. All Rights Reserved.
         </div>
     </footer>
+
 
     <script src="../js/chat.js"></script>
     <script>

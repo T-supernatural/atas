@@ -5,9 +5,9 @@
 /* navigation-bar */
 nav {
     width: 100%;
-    padding: 20px 50px;
+    padding: 10px 50px;
     padding-left: 30px;
-    background-color: rgb(44, 44, 202);
+    background-color: rgb(13, 13, 14);
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -48,13 +48,13 @@ nav ul a {
 }
 
 nav ul li.home a {
-    color: black;
+    color: rgb(221, 126, 1);
 }
 
 nav ul a:hover {
-    color: rgb(1, 31, 1);
+    color: rgb(221, 126, 1);
     padding-bottom: 7px;
-    border-bottom: 2px solid rgb(3, 4, 37);
+    border-bottom: 2px solid rgb(221, 126, 1);
 }
 
 nav .nav-menu-icon {
@@ -66,7 +66,7 @@ nav .nav-menu-icon {
 }
 
 nav .nav-menu-icon:hover {
-    color: black;
+    color: rgb(221, 126, 1);
 }
 
 nav .nav-sidebar {
@@ -76,7 +76,7 @@ nav .nav-sidebar {
     right: 0;
     width: 250px;
     height: 100%;
-    background-color: rgb(44, 44, 202);
+    background-color: rgb(13, 13, 14);
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -93,7 +93,7 @@ nav .nav-sidebar ul li {
 }
 
 nav .nav-sidebar ul li.home a {
-    color: black;
+    color: rgb(221, 126, 1);
 }
 
 nav .nav-sidebar ul li a {
@@ -104,7 +104,7 @@ nav .nav-sidebar ul li a {
 }
 
 nav .nav-sidebar ul li a:hover {
-    color: rgb(1, 31, 1);
+    color: rgb(221, 126, 1);
     margin-left: 15px;
 }
 
@@ -118,7 +118,7 @@ nav .nav-sidebar .close-btn {
 }
 
 nav .nav-sidebar .close-btn:hover {
-    color: black;
+    color: rgb(221, 126, 1);
 }
 
 
@@ -206,6 +206,7 @@ nav .nav-sidebar .close-btn:hover {
     transform: translateY(-50%) scale(1.1);
     background-color: rgba(255, 255, 255, 0.5);
 }
+
 #preloader {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
@@ -370,4 +371,38 @@ nav .nav-sidebar .close-btn:hover {
     color: #4B5563;
     /* Tailwind gray-600 */
     font-weight: 500;
+}
+
+.signup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.signup:target {
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.signup:target .signup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.signup__content {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../IMG/pic-one.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s .2s;
+
+    @apply max-sm:bg-gradient-to-r max-sm:from-gray-300 max-sm:from-0% max-sm:to-gray-300 max-sm:to-100% absolute top-1/2 left-1/2 w-[80vw] md:w-3/4 h-[80vh] shadow-md rounded-sm overflow-hidden opacity-0 table;
 }
